@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Fredoka:wdth,wght@102.7,300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo {
+    height: 3rem;
+}
+body{
+     font-family: "Faculty Glyphic", serif;
+}
+li {
+    list-style-type: none;
+    margin: 0.5rem;
+    font-size: 0.8rem;
+    font-family: "Faculty Glyphic", serif;
+  font-weight: 600;
+  color: rgb(105, 104, 104);
+  cursor: pointer;
+}
+nav ul{
+    display: flex;
+    /* gap: 0.5rem; */
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0rem 1rem 2rem rgb(213, 212, 212);
+    position: fixed;
+    z-index: 1;
+    padding: 1.5rem;
+    background-color: white;
+    top: 0px;
+    width: 100%;
+}
+.Logobutton{
+    border: white;
+    background-color: white;
+
+}
+.left ul li{
+    position: absolute;
+    z-index: 2;
+}
+
+.left{
+   background-color: white;
+    height: 100vh;
+    border: 2px solid rgb(233, 233, 233);
+    width: 50%;
+    z-index: 1;
+    transition: 1s;
+    gap: 1rem;
+    justify-content: center;
+    position: absolute;
+    left: -100%;
+}
+.left a{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+    
+    text-decoration: none;
+    color: black;
+}
+.left div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.left svg{
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+.men{
+    border: 2px solid rgb(245, 95, 95);
+    position: relative;
+    top: 2.7rem;
+    opacity: 0%;
+}
+.women{
+    border: 2px solid rgb(239, 129, 148);
+    position: relative;
+    top: 2.7rem;
+    opacity: 0;
+}
+.kids{
+    border: 2px solid rgb(236, 164, 30);
+    position: relative;
+    top: 2.7rem;
+    opacity: 0;
+}
+.home{
+    opacity: 0;
+    border: 2px solid rgba(255, 196, 0, 0.882);
+    position: relative;
+    top: 2.7rem;
+}
+.beauty{
+    opacity: 0;
+    border: 2px solid rgba(26, 136, 136, 0.433);
+    position: relative;
+    top: 2.7rem;
+}
+.studio{
+    opacity: 0;
+    border: 2px solid red;
+    position: relative;
+    top: 2.7rem;
+}
+.blank{
+    height: 100%;
+    width: 100%;
+}
+/* Remove the default border on focus */
+input:focus {
+    outline: none;
+}
+
+
+.search-bar {
+    background-color: #f2f2f2; /* Dark gray background */
+    border: 2px solid  #f2f2f2;
+    border-radius: 9px; 
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    width: 19rem;
+    margin:0.2rem;
+    height: 1.5rem;
+
+  }
+  
+  .margin-top{
+    margin-top: 1rem;
+  }
+  .test{
+    position: relative;
+    bottom: 0px;
+  }
+  .searchInput{
+    
+    background-color: #f2f2f2;
+    width: 18rem;
+    margin: 0.5rem;
+  }
+  .search-bar input{
+    border: none;
+  }
+  .icon{
+    height: 1.8rem;
+    font-family: "Faculty Glyphic", serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    display: inline;
+    text-align: center;
+
+  }
+  .search-bar button{
+    padding: 0.3rem;
+    border: none;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+  }
+  .search-bar button:hover{
+    background-color: rgb(198, 197, 197);
+    cursor: pointer;
+  }
+ .slider{
+    margin-top: 9.5rem;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+    top: 0px;
+ }
+ .slider2{
+    margin-top: 2.5rem;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+    
+ }
+ .slide{
+    height: 50vh;
+    width: 100%;
+    position: absolute;
+    transition: 1s;
+ }
+.margin{
+    margin: 1.2rem;
+}
+ .sliderButtons{
+    text-align: center;
+    margin: 0.5rem;
+    padding: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .prev{
+    transform: rotate(180deg);
+
+ }
+ .next{
+    margin-top: 0.5rem;
+ }
+ .sliderButtons button{
+    padding: 0.5rem;
+    background-color: white;
+    border: 2px solid white;
+ }
+ .countersvg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .countersvg button{
+    background-color: white;
+    border: 2px solid white;
+
+ }
+ .countersvg button svg{
+    height: 9px;
+    fill: rgb(183, 183, 183);
+}
+.page1{
+    margin-top: 3rem;
+    font-family: "Faculty Glyphic", serif;
+  font-weight: 600;
+  color: rgb(84, 84, 84);
+  margin-left: 2rem;
+}
+.page1slider{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+.page1slide{
+    position: absolute;
+    width: 100%;
+    transition: 1s;
+    text-align: center;
+}
+.page1slide img{
+    width: 13.6rem;
+    height: 24rem;
+   
+}
+.storeleft{
+    position: absolute;
+    top: 5rem;
+}
+.result p{
+    position: absolute;
+    margin-top: -3rem;
+    padding: 1rem;
+    width: 100vw
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    margin-top: 12rem /* Space for where the nav bar would be */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.store-container {
+    display: flex;
+    margin-top: 12rem; /* 50px / 16 = 3.125rem */
+}
+
+.filter-section {
+    width: 16.75rem; /* 300px / 16 = 18.75rem */
+    padding: 1.25rem; /* 20px / 16 = 1.25rem */
+    border: 0.0625rem solid #ddd; /* 1px / 16 = 0.0625rem */
+    border-radius: 0.3125rem; /* 5px / 16 = 0.3125rem */
+}
+
+.filter-section h2 {
+    font-size: 1.125rem; /* 18px / 16 = 1.125rem */
+    margin-bottom: 0.625rem; /* 10px / 16 = 0.625rem */
+}
+
+.filter-section h3 {
+    font-size: 1rem; /* 16px / 16 = 1rem */
+    margin-bottom: 0.625rem; /* 10px / 16 = 0.625rem */
+}
+.store{
+    border: 1px solid rgb(206, 206, 206);
+    width: 100%;
+}
+.brand-list,
+.color-list,
+.discount-list {
+    list-style: none;
+    padding: 0;
+}
+
+.brand-list li,
+.color-list li,
+.discount-list li {
+    margin-bottom: 0.625rem; /* 10px / 16 = 0.625rem */
+}
+
+.brand-list input[type="checkbox"],
+.color-list input[type="checkbox"],
+.discount-list input[type="checkbox"] {
+    margin-right: 0.625rem; /* 10px / 16 = 0.625rem */
+}
+
+.more-brands,
+.more-colors {
+    color: red;
+    cursor: pointer;
+    display: block;
+    margin-top: 0.625rem; /* 10px / 16 = 0.625rem */
+}
+
+.price-filter {
+    margin-top: 1.25rem; /* 20px / 16 = 1.25rem */
+}
+
+.price-slider {
+    width: 100%;
+}
+
+.product-image{
+    overflow: hidden;
+    width: 9rem;
+}
+.product-image img{
+    height: 9.5rem;
+    width: 19.5rem;
+    
+}
+.recommand{
+    position: absolute;
+    text-align: left;
+    margin-left: 1rem;
+    background-color: white;
+    width: 20rem;
+    color: grey;
+    font-size: 0.8rem;
+}
+
+
+.recommand h3{
+    background-color: #ddd;
+    padding: 0.5rem;
+}
+.recommand p{
+    padding: 0.3rem;
+}
+.recommand p:hover{
+    background-color: #ebeaea;
+}
+.Secondp{
+    font-weight: 600;
+    color: black;
+}
+.wishlistbutton{
+    margin-top: 1rem;
+    text-align: center;
+    border: 1px solid rgb(218, 216, 216);
+    background-color: white;
+    width: 100%;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-family: "Faculty Glyphic", serif;
+    padding: 0.2rem;
+}
+.wishlistbutton svg{
+    position: relative;
+    top: 0.25rem;
+}
+.wishlistbutton:hover{
+border: 1px solid black;
+}
+.countersvg .productcircle{
+    fill: rgb(183, 183, 183);
+    margin: 0.2rem;
+}
+
+@media only screen and (max-width: 900px) {
+    html {
+        font-size: 80%;
+    }
+    .slider{
+        width: 100%;
+    }
+    .page1slider{
+        height: 90vh;
+    }
+    .page1slide{
+        height: 90vh;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 60%;
+    }
+    .slider{
+        width: 100%;
+        
+    }
+    .page1slider{
+        height: 100vh;
+    }
+    .page1slide{
+        height: 100vh;
+    }
+    .Logobutton:hover{
+        cursor: pointer;
+    }
+    
+  /* Hide list items on mobile devices */
+
+    li {
+        display: none;
+    }
+  
+}

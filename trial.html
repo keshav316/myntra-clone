@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .product-container {
+    position: relative;
+    width: 300px; /* Adjust size as needed */
+}
+
+.product-slider .slide {
+    display: none;
+    width: 100%;
+}
+
+.product-slider .slide:first-child {
+    display: block;
+}
+
+.product-circles {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.product-circles .circle {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: lightgray;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.product-circles .circle.active {
+    background-color: pink;
+}
+
+    </style>
+</head>
+<body>
+    <div class="product-container">
+        <div class="product-slider" id="productSlider">
+            <img src="product1.webp" alt="Product Image 1" class="slide">
+            <img src="product2.jpg" alt="Product Image 2" class="slide">
+            <!-- Add more images here as needed -->
+        </div>
+        <div class="product-circles" id="productCircles">
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <!-- Add more circles here as needed -->
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const slides = document.querySelectorAll(".product-slider .slide");
+    const circles = document.querySelectorAll(".product-circles .circle");
+
+    let currentIndex = 0;
+
+    document.querySelector(".product-container").addEventListener("mouseover", function() {
+        slides[currentIndex].style.display = "none";
+        circles[currentIndex].classList.remove("active");
+
+        currentIndex = (currentIndex + 1) % slides.length;
+
+        slides[currentIndex].style.display = "block";
+        circles[currentIndex].classList.add("active");
+    });
+
+    circles.forEach((circle, index) => {
+        if (index === 0) circle.classList.add("active");
+    });
+});
+
+    </script>
+    
+</body>
+</html>
